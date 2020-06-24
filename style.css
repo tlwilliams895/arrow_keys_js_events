@@ -1,0 +1,12 @@
+:root {
+  box-sizing: border-box;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: gray;
+  left: 200px;
+  top: 200px;
+}
