@@ -1,10 +1,17 @@
 let boxTop = 200;
 let boxLeft = 200;
 
-document.getElementById("box").style.top = boxTop + "px";
-
 document.addEventListener('keydown', logKey);
 
 function logKey(e) {
     log.textContent += ` ${e.code}`;
+    if (e.code === "ArrowUp") {
+        document.getElementById("box").style.top = (boxTop -= 10) + "px";
+    } else if (e.code === "ArrowDown") {
+        document.getElementById("box").style.top = (boxTop += 10) + "px";
+    } else if (e.code === "ArrowLeft") {
+        document.getElementById("box").style.left = (boxLeft -= 10) + "px";
+    } else if (e.code === "ArrowRight") {
+        document.getElementById("box").style.left = (boxLeft += 10) + "px";
+    }
 }

@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+}
+
 #box {
-  width: 100px;
-  height: 100px;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  background: gray;
+  background: url("image/yesSheCodes.webp") repeat-x top;
   left: 200px;
   top: 200px;
 }
