@@ -16,6 +16,7 @@ document.addEventListener('keydown', logKey);
 //     }
 // }
 
+
 // Switch Statement
 function logKey(e) {
     log.textContent += ` ${e.code}`;
@@ -27,10 +28,10 @@ function logKey(e) {
             document.getElementById("box").style.top = (boxTop += 10) + "px";
             break;
         case "ArrowRight":
-            document.getElementById("box").style.left = (boxLeft -= 10) + "px";
+            document.getElementById("box").style.left = (boxLeft += 10) + "px";
             break;
         case "ArrowLeft":
-            document.getElementById("box").style.left = (boxLeft += 10) + "px";
+            document.getElementById("box").style.left = (boxLeft -= 10) + "px";
             break;
     }
 }
