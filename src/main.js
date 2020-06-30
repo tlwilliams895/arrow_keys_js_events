@@ -19,6 +19,9 @@ document.addEventListener('keydown', logKey);
 
 // Switch Statement
 function logKey(e) {
+    // stops and prevents arrow keys to keep the movevemnt from
+    // going off of the page
+    event.preventDefault();
     log.textContent += ` ${e.code}`;
     switch (e.code) {
         case "ArrowUp":
